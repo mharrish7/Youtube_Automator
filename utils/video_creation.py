@@ -4,6 +4,7 @@ from moviepy import *
 target_width = 540
 target_height = 960
 
+# Background
 baseLayer = ColorClip((1080,1920), color=(0,0,0))
 
 font = "font.ttf"
@@ -45,6 +46,7 @@ def zoom_in_image(t):
 
 
 def video_main():
+    global baseLayer
     line_by_line = open("./outputs/line_by_line.txt")
     videos = []
     content = line_by_line.read().split("\n")
