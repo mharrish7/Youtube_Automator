@@ -1,0 +1,8 @@
+dist/
+env/
+build/
+audio/
+images/
+__pycache__/
+gemini_secret.txt
+main.spec
