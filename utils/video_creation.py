@@ -45,7 +45,7 @@ def zoom_in_image(t):
 
 
 def video_main():
-    line_by_line = open("line_by_line.txt")
+    line_by_line = open("./outputs/line_by_line.txt")
     videos = []
     content = line_by_line.read().split("\n")
     part = 0

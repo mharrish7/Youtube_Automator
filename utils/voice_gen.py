@@ -56,7 +56,7 @@ def create_folder_if_not_exists(folder_path):
 
 def voice_main():
 	client = Client("http://127.0.0.1:7860/")
-	f = open('text.txt')
+	f = open('./outputs/text.txt')
 	text_input = f.read()
 	text_input = text_input.replace(':',' ').replace('-',' ').replace('_'," ").replace('!','.').replace('*',"").replace(',','.')
 	lines = text_input.strip().split('\n')

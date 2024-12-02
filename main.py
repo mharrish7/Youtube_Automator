@@ -1,7 +1,7 @@
-from write_script import write_content,get_content,get_title
-from voice_gen import voice_main, split_words,create_folder_if_not_exists
-from image_gen import image_main
-from video_creation import video_main
+from utils.write_script import write_content,get_content,get_title
+from utils.voice_gen import voice_main, split_words,create_folder_if_not_exists
+from utils.image_gen import image_main
+from utils.video_creation import video_main
 from pathlib import Path
 import sys 
 import time 

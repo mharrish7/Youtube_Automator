@@ -1,4 +1,4 @@
-from gemini import query
+from utils.gemini import query
 
 
 def get_title():
@@ -15,7 +15,7 @@ def get_title():
             if choice == -1:
                 continue
             print("Title Acquired!")
-            with open("title.txt", "w",encoding='utf-8') as f:
+            with open("./outputs/title.txt", "w",encoding='utf-8') as f:
                 f.write(titles[choice])
             return titles[choice]
         else:
