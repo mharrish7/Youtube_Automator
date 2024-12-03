@@ -21,7 +21,7 @@ def download_image(prompt,part):
     try:
         response = requests.get(url, stream=True)
         response.raise_for_status()  
-        create_folder_if_not_exists('./images')
+        create_folder_if_not_exists('./outputs/images')
         with open(f"./outputs/images/part{part}.jpg", "wb") as f:
             for chunk in response.iter_content(chunk_size=8192):
                 f.write(chunk)

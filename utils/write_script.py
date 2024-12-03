@@ -24,7 +24,7 @@ def get_title():
 
 def get_content(title):
     while True:
-        data = query(f"Explain about this topic in short and crisp {title} for 1 min. Be creative and create theories")
+        data = query(f"Explain about this topic {title} in short  for 1 min. Be creative.")
         if data:
             content = data["candidates"][0]["content"]["parts"][0]["text"]
             print(content)
