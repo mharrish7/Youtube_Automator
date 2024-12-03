@@ -76,7 +76,8 @@ Install the required Packages
 ### Tortoise TTS
 
 - You can install tortoise TTS from here https://github.com/JarodMica/ai-voice-cloning. 
-- Run the start.bat file. 
+- Run the start.bat file.
+- Save the required voice as male1.
 
 ## Usage
 
