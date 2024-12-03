@@ -14,7 +14,7 @@ if not my_file.is_file():
     sys.exit()
 create_folder_if_not_exists('./outputs')
 
-
+print("Yet To Name Youtube Automator Version 0.1")
 print("*"*25+" CONTENT GENERATION " + "*"*25)
 write_content(get_content(get_title()))
 print("Check your content in text.txt")

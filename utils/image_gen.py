@@ -26,7 +26,6 @@ def download_image(prompt,part):
             for chunk in response.iter_content(chunk_size=8192):
                 f.write(chunk)
 
-        print("Image downloaded successfully!")
 
     except requests.exceptions.RequestException as e:
         print(f"Error downloading image: {e}")

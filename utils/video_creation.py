@@ -54,7 +54,7 @@ def video_main():
     for text in content:
         if text == "":
             break
-        fname = f'./outputs/voices/part{part}.wav'
+        fname = f'./outputs/audio/part{part}.wav'
         audioclip = AudioFileClip(fname)
         image_path = f"./outputs/images/part{part}.jpg"
         imageLayer = create_image_clip(image_path, audioclip.duration)
